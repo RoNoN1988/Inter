@@ -43,18 +43,19 @@
       width: 100%;
       border-radius: 8px;
     }
-    .volver {
+    .btn-album, .volver {
       display: inline-block;
       margin-top: 2rem;
       text-decoration: none;
       color: #000;
       font-weight: bold;
       background: rgba(255,255,255,0.85);
-      padding: 0.8rem 1.2rem;
+      padding: 0.8rem 1.4rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
     }
-    .volver:hover {
+    .btn-album:hover, .volver:hover {
       background: #fff;
     }
   </style>
@@ -75,6 +76,10 @@
     </div>
   </div>
 
+  <!-- Botón para ver el álbum completo -->
+  <a href="https://photos.app.goo.gl/aHSQdwKmcXCEnjsx5" target="_blank" rel="noopener noreferrer" class="btn-album">📸 Ver álbum completo</a>
+  <br />
+  <!-- Botón para volver al inicio -->
   <a href="index.html" class="volver">← Volver al inicio</a>
 </body>
 </html>
