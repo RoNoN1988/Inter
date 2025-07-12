@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sumá tu saludo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://i.imgur.com/Af8sMk5.jpeg'); /* Fondo diferente si querés */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #222;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .media {
+      background: rgba(255,255,255,0.85);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .media img, .media iframe {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .btn-album, .volver, .btn-sumar {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      background: rgba(255,255,255,0.85);
+      padding: 0.8rem 1.4rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      margin-right: 1rem;
+    }
+    .btn-album:hover, .volver:hover, .btn-sumar:hover {
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sumá tu saludo</h1>
+  <p>Amigos de todo el mundo se sumaron con fotos, videos o palabras lindas... ¡Y vos también podés!</p>
+
+  <div class="galeria">
+    <div class="media">
+      <img src="img/saludo1.jpg" alt="Saludo 1" />
+    </div>
+    <div class="media">
+      <iframe src="https://www.youtube.com/embed/xxxxxxx" title="Video saludo" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="media">
+      <img src="img/saludo2.jpg" alt="Saludo 2" />
+    </div>
+  </div>
+
+  <!-- Botón para subir un saludo -->
+  <a href="https://wa.me/5491123456789?text=¡Hola! Quiero sumar mi saludo 🥳" target="_blank" rel="noopener noreferrer" class="btn-sumar">📤 Quiero sumar mi saludo</a>
+
+  <!-- Ver álbum -->
+  <a href="https://photos.app.goo.gl/..." target="_blank" rel="noopener noreferrer" class="btn-album">📸 Ver todos los saludos</a>
+
+  <!-- Volver -->
+  <a href="index.html" class="volver">← Volver al inicio</a>
+</body>
+</html>
