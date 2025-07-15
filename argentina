@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saludos desde Argentina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', sans-serif;
+      background-image: url('img/fondo-argentina.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #222;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .media {
+      background: rgba(255,255,255,0.85);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .media img, .media video {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .btn-album, .volver {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      background: rgba(255,255,255,0.85);
+      padding: 0.8rem 1.4rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .btn-album:hover, .volver:hover {
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Saludos desde Argentina</h1>
+  <p>Desde el sur del mundo, con alegría y mucha onda, te mandamos este saludo 🇦🇷</p>
+
+  <div class="galeria">
+    <div class="media">
+      <img src="img/argentina1.jpg" alt="Foto 1 Argentina" />
+    </div>
+    <div class="media">
+      <img src="img/argentina2.jpg" alt="Foto 2 Argentina" />
+    </div>
+    <div class="media">
+      <video controls>
+        <source src="videos/saludos-argentina.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+  </div>
+
+  <a href="https://photos.app.goo.gl/tu_album_argentina" target="_blank" rel="noopener noreferrer" class="btn-album">📸 Ver álbum completo</a>
+  <br />
+  <a href="index.html" class="volver">← Volver al inicio</a>
+</body>
+</html>
