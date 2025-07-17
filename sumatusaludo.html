@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saludos desde Argentina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Saludos desde Argentina</h1>
+  <p>Desde el sur del mundo, con alegría y mucha onda, te mandamos este saludo 🇦🇷</p>
+
+  <div class="form-container">
+    <h2>✍️ Dejá tu saludo de cumpleaños</h2>
+    <input type="text" id="nombre" placeholder="Tu nombre">
+    <textarea id="mensaje" placeholder="Tu mensaje de cumpleaños"></textarea>
+    <input type="file" id="foto" accept="image/*">
+    <button onclick="enviarSaludo()">Enviar saludo</button>
+  </div>
+
+  <div class="galeria" id="saludosContainer"></div>
+
+  <a href="https://photos.app.goo.gl/q8QCaofMVF7h5SWD6" target="_blank" class="btn-album">📸 Ver álbum completo</a>
+  <br />
+  <a href="index.html" class="volver">← Volver al inicio</a>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
