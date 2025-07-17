@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('img/argentina-fondo.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #222;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.media {
+  background: rgba(255,255,255,0.85);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.media img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.form-container {
+  background: rgba(255,255,255,0.95);
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1f8a4d;
+}
+
+.btn-album, .volver {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  background: rgba(255,255,255,0.85);
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.btn-album:hover, .volver:hover {
+  background: #fff;
+}
